@@ -9,19 +9,44 @@
     </head>
     <body>
         <h1 id="top">SQL Projects Page</h1>
-
-        <hr>
-        <hr>
-
+        <hr><hr>
 
         <section id="electric_vehicle_project">
-            <h2>Washington State Electric Vehicle Analysis </h2>  
+            <h2>Project 1 - Washington State Electric Vehicle Analysis </h2>  
             <p>
-                In this SQL project, I leveraged the Washington State Department of Licensing's dataset on Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) to analyze and derive valuable insights. Using MySQL Workbench, I performed data exploration and calculated summary statistics to showcase key trends and patterns within the dataset.  
+                In this SQL project, I leveraged the Washington State Department of Licensing's dataset on Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) to analyze and derive valuable insights. Using MySQL Workbench, I performed AD-HOC analysis to showcase key marketshare information within the dataset.  
             </p>
             <p>
-                The dataset used for this project is from <a href="https://catalog.data.gov/dataset" target="_blank">data.gov</a>. There are over 150,000 total vehicles in this dataset. Some of the interesting columns include: Model Year, Make, Model and Electric Vehicle Type.  
+                The dataset used for this project can be found at <a href="https://catalog.data.gov/dataset" target="_blank">data.gov</a>. There are over 150,000 total vehicles in this dataset. Some of the interesting columns include: Model Year, Make, Model and Electric Vehicle Type.  
             </p>
+            <br>
+            <p>
+                The screenshot below shows the query I used to effectively calculate the market share of the two electric vehicle types in the dataset.
+                <br>In Washington State, the Battery Electric Vehicle (BEV), which are the fully electric vehicles, have a much bigger share of the market at 77.89%.
+            </p>
+            <img src="images/bev_phev_marketshare_1.png" alt="market share of both vehicle types" width="900">
+            <br><br><br><br>
+            <p>
+                Next I wanted to look at the marketshare for the Make of each vehicle, to see how much of it was taken by Tesla alone. When executing the below query, the output reveals that Tesla does take up a large 59.91% of the total electric vehicle market in Washington State shown below. 
+            </p>
+            <img src="images/tesla_marketshare_2.png" alt="marketshare of Tesla" width="900">
+            <br><br><br><br>
+            <p>
+                The next query I designed, shown below, extracts information from just the Battery Electric Vehicle (BEV) type. It shows the amount of vehichles each model has from that vehicle type. It also shows the vehicle's battery range.
+            </p>
+            <img src="images/full_electric_share_3.png" alt="bev share" width="900">
+            <br><br><br><br>
+            
+            <p>
+                The next query presents data from just the Plug-in Hyprib Electric Vehicles (PHEVs), to see which are most popular models from that type. 
+            </p>
+            <img src="images/phev_share_4.png" alt="phev marketshare" width="900">
+            <br><br><br><br>
+
+            <p>
+                Finally, I designed to a query to look at the model year. It  calculated the total number, and percentage of vehicles for the last ten years.
+            </p>
+            <img src="images/model_year_5.png" alt="model years" width="900">
             </section>
 
          <hr>

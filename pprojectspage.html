@@ -11,38 +11,73 @@
 
     <body>
         <h1 id="top">Python Projects Page</h1>
-        <hr>
-        <hr>
-        <br>
-
-        <section id="guessing_game">
-        <h2>Guessing game</h2>
+    
+    <section id="qb_data_system">
+        <hr><hr>
+        <h2>1. QB Data System</h2>
         <p>
-            This Python Guessing Game is an interactive program that showcases my proficiency in Python programming. It utilizes key concepts such as user input, random number generation, conditional statements, loops, string formatting and functions. The game also demonstrates my ability to implement logical decision-making, and provide a responsive user interface.
-        </p>  
-        
-        <p>
-            Below are screenshots of the code and also of the program being played out. 
+            I designed this python program to analyze and compare five NFL quarterbacks stats from the 2022 season. The data used comes from nfl.com/stats/player-stats. 
+            <br><br>
+            The code begins by defining a Quarterback class, serving as a blueprint for creating quarterback objects. Each instance of the class represents a quarterback and is initialized with attributes such as passing yards, touchdowns, completion percentage, interceptions, and regular season wins. This demonstrates my understanding of object-oriented design and encapsulation.
+            <br><br>
+            I implemented a method within the Quarterback class. This allows the program to present a comprehensive view of all the quarterbacks and their respective performance metrics.
+            <br><br>
+            To demonstrate my proficiency in applying data analysis methods to derive meaningful insights from a dataset, I use lambda and also the the max() function, to find quarterbacks with the most touchdowns, passing yards, interceptions, and regular season wins. 
+            <br><br>
+            Below are the screenshots for the code of the program.
         </p>
-        <img src="images/probability_game_2023-07-08.png" alt="probability game code" width="900">
-        <br><br><br><br>
+        <img src="images/qb_program_code_1.png" alt="qb program code 1" width="1600"><br>
+        <img src="images/qb_program_code_2.png" alt="qb program code 2" width="1600">
         <p>
-            The program offers the user a choice to either win $10 or play the guessing game for a chance to win a larger prize. Throughout the game, the user has 10 attempts to guess a randomly generated number between 1 and 1000.  
+            To demonstrate data filtering and manipulation, I implemented the use of a function and a for loop to filter quarterbacks based on a completion percentage threshold.
         </p>
-        <img src="images/guess_program_played_6.png" alt="starting guessing game" width="900">
+        <p>
+            To enhance user experience, I  incorporated a menu-driven interface. The menu() function presents a clear menu of options, allowing users to choose from various analysis options. The main program, run_program(), uses a while loop to repeatedly display the menu and process the user's choice. Depending on the user's input, the program calls the corresponding function to perform the requested analysis or exits the program if the user chooses to do so.  
+        </p>
+        <br><br>
+        <p>
+            The screenshots below provide a look into the program's user functionality. A menu system is displayed for user interaction. The menu provides options to perform various actions, icluding finding the quarterback with the most touchdowns or passing yards, identifying the quarterback with the most interceptions or regular season wins. 
+        </p>
+        <img src="images/int_gameswon.png" alt="int and games won" width="1700">
+        <br><br>
+        <p>
+            Selecting option 6, lets the user filter quarterbacks based on a completion percentage threshold.
+        </p>
+        <img src="images/completion_perc.png" alt="completion percentage" width="1700">
+        <br><br>
+        <p>
+            The program can also display all of the players with thier performance stats in a clear and organized manner. 
+        </p>
+        <img src="images/display_qb_info.png" alt="display qb info" width="1700" ><br>
+        <p>
+            I designed the code to be scalable and extensible. It allows for easy addition of new quarterbacks or incorporation of additional features. 
+            <br> <br>
+            This project exemplifies my proficiency in object-oriented programming, data analysis, data filtering. It showcases my ability to work with data, derive insights, and present information in a clear manner.
+        </p>
+    </section>
         <br><br><br>
+    <section id="guessing_game">
+        <hr><hr>
+        <h2>2. Guessing Game</h2>
+        <p>
+            This Python program is a game I designed. Below are screenshots of the code and also of the program being played out.
+        </p>    
+        <img src="images/guessing_game_code.png" alt="probability game code" width="1000">
+        <br><br><br>
+        <p>
+            The program offers the user a choice to either win $10 or play the guessing game for a chance to win a larger prize. After choosing to play, The user has 10 attempts to guess a randomly generated number between 1 and 1000.  
+        </p>
         <p>
             The program dynamically adjusts the prize money based on the user's progress and provides feedback on each guess, indicating if the guess is too high or too low.
         </p>
-        <img src="images/guess_program_played_5.png" alt="winning guessing game" width="900">
-        <br><br><br><br>
+        <img src="images/guess_program_played3.png" alt="guessing game played" width="1100" >
         <p>
-            It's very hard to win a big prize, it would be smarter to take the $10, unless you are feeling lucky!
+            I used python programming concepts such as user input, random number generation, conditional statements, loops, string formatting and functions for the development of this game. Building this game also demonstrates my ability to implement logical decision-making, and provide a responsive user interface. 
         </p>
-        <img src="images/guess_program_played3.png" alt="guessing game played" width="900" >
-        </section>
-        <hr> 
+        <hr>
+    </section>
         <br>
+        <hr>
         <div class="bottom-links">
             <a href="index.html">Portfolio Main Page</a>
             <a href="#top">Back to the top</a>
