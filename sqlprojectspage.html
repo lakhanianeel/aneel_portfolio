@@ -17,7 +17,7 @@
                 In this SQL project, I leveraged the Washington State Department of Licensing's dataset on Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) to analyze and derive valuable insights. Using MySQL Workbench, I performed AD-HOC analysis to showcase key marketshare information within the dataset.  
             </p>
             <p>
-                The dataset used for this project can be found at <a href="https://catalog.data.gov/dataset" target="_blank">data.gov</a>. There are over 150,000 total vehicles in this dataset. Some of the interesting columns include: Model Year, Make, Model and Electric Vehicle Type.  
+                The dataset used for this project can be found at <a href="https://catalog.data.gov/dataset/electric-vehicle-population-data" target="_blank">catalog.data.gov/dataset/electric-vehicle-population-data</a>. There are over 150,000 total vehicles in this dataset. Some of the interesting columns include: Model Year, Make, Model and Electric Vehicle Type.  
             </p>
             <br>
             <p>
@@ -25,23 +25,23 @@
                 <br>In Washington State, the Battery Electric Vehicle (BEV), which are the fully electric vehicles, have a much bigger share of the market at 77.89%.
             </p>
             <img src="images/bev_phev_marketshare_1.png" alt="market share of both vehicle types" width="1400">
-            <br><br><br><br>
+            <br><br><br>
             <p>
                 Next I wanted to look at the marketshare for the Make of each vehicle, to see how much of it was taken by Tesla alone. When executing the below query, the output reveals that Tesla does take up a large 59.91% of the total electric vehicle market in Washington State shown below. 
             </p>
             <img src="images/tesla_marketshare_2.png" alt="marketshare of Tesla" width="1400">
-            <br><br><br><br>
+            <br><br><br>
             <p>
                 The next query I designed, shown below, extracts information from just the Battery Electric Vehicle (BEV) type. It shows the amount of vehichles each model has from that vehicle type. It also shows the vehicle's battery range.
             </p>
             <img src="images/full_electric_share_3.png" alt="bev share" width="1400">
-            <br><br><br><br>
+            <br><br><br>
             
             <p>
                 The next query presents data from just the Plug-in Hyprib Electric Vehicles (PHEVs), to see which are most popular models from that type. 
             </p>
             <img src="images/phev_share_4.png" alt="phev marketshare" width="1400">
-            <br><br><br><br>
+            <br><br><br>
 
             <p>
                 Finally, I designed to a query to look at the model year. It  calculated the total number, and percentage of vehicles for the last ten years.
@@ -50,15 +50,33 @@
             </section>
 
          <hr>
-
-        <section id="sql_project2">
-            <h2>Project 2 -</h2>
+            <br><br><br>
+        <section id="Purchase_card_program_project">
+            <h2>Project 2 - Oklahoma Purchase Card Program Analysis</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur cumque ullam, fugit autem, praesentium repellendus qui ut maiores nostrum dolorem! Dolore consequatur dolorem est voluptatibus itaque delectus eaque cum? 
+                In this project, I conducted another analysis utalizing mysql.
+                <br>The dataset used in this project can be found at <a href="https://catalog.data.gov/dataset/purchase-card-pcard-fiscal-year-2022-31015" target="_blank">catalog.data.gov/dataset/purchase-card-pcard-fiscal-year-2022-31015</a>. It contains over 25,000 transactions. 
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic molestias quo, maxime id odio quibusdam esse eos blanditiis soluta ipsa ex est culpa ratione, labore numquam? Sapiente, asperiores aliquid.
+                This  dataset contains information on purchases made through the purchase card programs administered by the state of Oklahoma and higher education institutions for the 2022 fiscal year.
             </p>
+            <p>
+                The screenshot below shows most of the important columns. 
+            </p>
+            <img src="images/okpcard_all_data_sql.png" alt="okpcard_all_data" width="1400">
+            <br><br><br>
+            <p>
+                The below query aims to identify the top 20 agencies with the highest total purchase amounts and their percentage of the total.
+            </p>
+            <img src="images/agencies_with_highest_amounts.png" alt="agencies_with_highest_amounts" width="1400">
+            <br><br><br>
+            <p>
+                With this query shown below, I conducted an analysis of transaction counts based on MCC (Merchandise Category Code) descriptions, to gain insights into the most common merch categories and their corresponding transaction volumes.
+            </p>
+            <p>
+                The query groups the data by MCC_DESCRIPTION and calculates the count of transactions within each category using the COUNT(*) function. By leveraging the GROUP BY clause, I ensured that the results were aggregated by MCC_DESCRIPTION.
+            </p>
+            <img src="images/merch_desc_count.png" alt="merch_desc_count" width="1400">
         </section>
         <hr>
 
