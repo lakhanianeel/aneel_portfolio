@@ -19,7 +19,6 @@
             <p>
                 The dataset used for this project can be found at <a href="https://catalog.data.gov/dataset/electric-vehicle-population-data" target="_blank">catalog.data.gov/dataset/electric-vehicle-population-data</a>. There are over 150,000 total vehicles in this dataset. Some of the interesting columns include: Model Year, Make, Model and Electric Vehicle Type.  
             </p>
-            <br>
             <p>
                 The screenshot below shows the query I used to effectively calculate the market share of the two electric vehicle types in the dataset.
                 <br>In Washington State, the Battery Electric Vehicle (BEV), which are the fully electric vehicles, have a much bigger share of the market at 77.89%.
@@ -50,7 +49,7 @@
             </section>
 
          <hr>
-            <br><br><br>
+            <br><br><br><br>
         <section id="Purchase_card_program_project">
             <h2>Project 2 - Oklahoma Purchase Card Program Analysis</h2>
             <p>
@@ -66,32 +65,41 @@
             <img src="images/okpcard_all_data_sql.png" alt="okpcard_all_data" width="1400">
             <br><br><br>
             <p>
-                The below query aims to identify the top 20 agencies with the highest total purchase amounts and their percentage of the total.
+                The below query utilizes the GROUP BY clause and the SUM(AMOUNT) function to identify the top 20 agencies with the highest total purchase amounts.  
+            </p>
+            <p>
+                Additionally, it calculates the percentage of each agency's expenditure in relation to the overall spending. This calculation is performed by dividing an agency's sum of purchase amounts by the total purchase amount of all agencies, which is obtained through a subquery using the SELECT SUM(AMOUNT) function and the FROM statement.
             </p>
             <img src="images/agencies_with_highest_amounts.png" alt="agencies_with_highest_amounts" width="1400">
             <br><br><br>
             <p>
-                With this query shown below, I conducted an analysis of transaction counts based on MCC (Merchandise Category Code) descriptions, to gain insights into the most common merch categories and their corresponding transaction volumes.
+                With this query shown below, I looked at transaction counts of MCC (Merchandise Category Code) descriptions, to find the most common merchandise categories and their corresponding transaction volumes.
             </p>
             <p>
-                The query groups the data by MCC_DESCRIPTION and calculates the count of transactions within each category using the COUNT(*) function. By leveraging the GROUP BY clause, I ensured that the results were aggregated by MCC_DESCRIPTION.
+                This query groups the data by MCC_DESCRIPTION and calculates the count of transactions within each category using the COUNT(*) function. By leveraging the GROUP BY clause, I ensured that the results were aggregated by MCC_DESCRIPTION.
             </p>
             <img src="images/merch_desc_count.png" alt="merch_desc_count" width="1400">
+            <br><br><br>
+            <p>
+                In this next and final query, I look more in detail into expenditure trends and patterns.
+            </p>
+            
+            <img src="images/agency_expenditure.png" alt="agency_expenditure" width="1400">
+            <p>
+                I use the COUNT(*) and SUM(AMOUNT) functions again as well as the MAX(AMOUNT) function which finds the maximum amount spent in a single transaction by each agency. This shows the highest individual expenditure for each agency. 
+            </p>
+            <p>
+                The MIN(AMOUNT) function retrieves the minimum amount spent in a single transaction by each agency. This reveals lowest individual expenditure for each agency. 
+            </p>
+            <p>
+                The AVG(AMOUNT) function calculates the average amount spent per transaction by each agency. This helps gives an understanding of the typical expenditure level for each agency.
+            </p>
+            <p>
+                Creating the code for this query demonstrates my ability to extract meaningful insights from financial datasets, analyze transaction data, and provide potentially actionable information for informed decision-making in financial analysis and resource allocation.
+            </p>
         </section>
         <hr>
-
-        <section id="sql_project3">
-            <h2>Project 3 - </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nihil? Debitis architecto beatae, excepturi officiis enim et harum in, velit est saepe dolore, iste minima! Omnis voluptas accusamus optio nisi!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis quam, corrupti animi illum quisquam laboriosam repellendus consequatur at, reprehenderit, similique dignissimos hic explicabo porro aliquam non. Inventore, rerum numquam.
-            </p>
-        </section>
-
         <hr> 
-        <br>
         <div class="bottom-links">
             <a href="index.html">Portfolio Main Page</a>
             <a href="#top">Back to the top</a>
