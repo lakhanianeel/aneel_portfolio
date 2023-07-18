@@ -11,8 +11,12 @@
 
     <body>
         <h1 id="top">Python Projects Page</h1>
+        <div class="bottom-links">
+            <a href="#project_2">Project 2</a>
+            <a href="#project_3">Project 3</a>
+          </div>
 
-    <section id="movies_data_analysis">
+    <section id="project_1">
         <hr><hr>
         <h2>Project 1 - Movies Data Analysis</h2>
         <p>
@@ -29,16 +33,9 @@
         <p>
             By leveraging Pandas, I was able to carry out various types of data analysis. 
         </p>
+        
         <p>
-            One of the analysis include utilizing the 'describe' function to gather basic statistical information about numerical columns in the dataset as seen in the screenshot below. 
-        </p>
-        <img src="images/movies_describe_function.png" alt="image" width="1500">
-        <p>
-            As seen above, by using the the 'describe' function, I can gather useful information, such as the average star rating is 2.7 and the highest is 4 stars. The average runtime of the movies is an hour and 51 minutes, with the longest being about 10 hours long. Also, the release date of the movies range from 1970 to 2023, however most of the movies in this dataset are from 2000 to 2018. 
-        </p>
-        <br><br>
-        <p>
-            below shows a function I created called 'filter_star_rating', which filters the data showing only movies with 4 stars then sorts it by release date as seen in the screenshot below. 
+            Below shows a function I created called 'filter_star_rating', which filters the data showing only movies with 4 stars then sorts it by release date as seen in the screenshot below. 
         </p>
         <img src="images/movies_filter_rating.png" alt="image" width="1500">
         <br><br>
@@ -46,7 +43,7 @@
             The below screenshot shows the bar chart I created using the plotly.express module. It gives a visual representation of the  most popular genres.   
         </p>
         <p>
-            The code I wrote takes into account multiple genres being tied to single movies, and splits them into individual genres. It also counts the occurrence of each genre, and creates a horizontal bar chart to visualize the genre distribution.
+            The code I wrote takes into account the dataset having multiple genres being tied to individual movies, and splits them into individual genres. It also counts the occurrence of each genre, and creates a horizontal bar chart to visualize the genre distribution.
         </p>
         <img src="images/images:movie_genre_bar_chart2.png" alt="Bar Chart Image" width="1600">
         <br><br>
@@ -62,27 +59,36 @@
             The screenshot below shows the visualize_top_directors function I created to utilize, along with plotly, to visualize the top 10 directors with the most 4-star movies.
         </p>
         <p>
-            I filtered the DataFrame to include only the 4-star movies and employed data aggregation techniques to count the number of 4-star movies directed by each filmmaker.
+            I filtered the DataFrame to include only the 4-star rated movies and employed data aggregation techniques to count the number of 4-star movies directed by each filmmaker.
         </p>
         <img src="images/movies_topdirectors.png" alt="Top Directors Image" width="1500">
-
-    
-    <section id="qb_data_system">
-        <hr>
+        <br><br>
+        <p>
+            My final analysis utilized the 'describe' function to gather basic but useful statistical information about numerical columns in the dataset as seen in the screenshot below. 
+        </p>
+        <img src="images/movies_describe_function2.png" alt="image" width="1600">
+        <p>
+            By using the the 'describe' function, I can gather useful information, such as the average star rating, which is 2.7. The highest is 4 stars. The average runtime of the movies is 1 hour and 51 minutes, with the longest being about 10 hours long. Also, the release date of the movies range from 1970 to 2023, however most of the movies in this dataset are from 2000 to 2018. 
+        </p>
+    </section> 
+    <br>
+    <hr>
+    <br>
+    <section id="project_2">
         <h2>Project 2 - QB Data System</h2>
         <p>
             I designed this python program to analyze and compare five NFL quarterbacks stats from the 2022 season. The data used comes from <a href="https://www.nfl.com/stats/player-stats/" target="_blank">nfl.com/stats/player-stats/</a>. 
-            <br><br>
-            The code begins by defining a Quarterback class, serving as a blueprint for creating quarterback objects. Each instance of the class represents a quarterback and is initialized with attributes such as passing yards, touchdowns, completion percentage, interceptions, and regular season wins. This demonstrates my understanding of object-oriented design and encapsulation.
-            <br><br>
-            I've also implemented a method within the Quarterback class. This allows the program to present a comprehensive view of all the quarterbacks and their respective performance metrics.
-            <br><br>
-            To demonstrate my proficiency in applying data analysis methods to derive meaningful insights from a dataset, I use lambda and also the the max() function, to find quarterbacks with the most touchdowns, passing yards, interceptions, and regular season wins. 
-            <br><br>
+            
             Below are the screenshots for the code of the program.
         </p>
         <img src="images/qb_program_code_1.png" alt="qb program code 1" width="1600"><br>
         <img src="images/qb_program_code_2.png" alt="qb program code 2" width="1600">
+        <p>
+            The code begins by defining a Quarterback class, serving as a blueprint for creating quarterback objects. Each instance of the class represents a quarterback and is initialized with attributes such as passing yards, touchdowns, completion percentage, interceptions, and regular season wins.
+        </p>
+        <p>
+            I also implemented a method within the Quarterback class. This allows the program to present a comprehensive view of all the quarterbacks and their respective performance metrics. I then used lambda and also the the max() function, to find quarterbacks with the most touchdowns, passing yards, interceptions, and regular season wins. 
+        </p>
         <p>
             To demonstrate data filtering and manipulation, I implemented the use of a function and a for loop to filter quarterbacks based on a completion percentage threshold.
         </p>
@@ -105,13 +111,12 @@
         <img src="images/display_qb_info.png" alt="display qb info" width="1700" ><br>
         <p>
             I designed the code to be scalable and extensible. It allows for easy addition of new quarterbacks or incorporation of additional features. 
-            <br> <br>
-            This project exemplifies my proficiency in object-oriented programming, data analysis, data filtering. It showcases my ability to work with data, derive insights, and present information in a clear manner.
-        </p>
     </section>
-        <br><br><br>
-    <section id="guessing_game">
-        <hr><hr>
+    <br>
+    <hr> 
+    <br>
+    <section id="project_3">
+
         <h2>Project 3 - Guessing Game</h2>
         <p>
             This Python program is a game I designed. Below are screenshots of the code and also of the program being played out.
@@ -128,15 +133,13 @@
         <p>
             I used python programming concepts such as user input, random number generation, conditional statements, loops, string formatting and functions for the development of this game. Building this game also demonstrates my ability to implement logical decision-making, and provide a responsive user interface. 
         </p>
-        <hr>
     </section>
-        <br>
-        <hr>
+    <br>
+    <hr>
         <div class="bottom-links">
             <a href="index.html">Portfolio Main Page</a>
             <a href="#top">Back to the top</a>
           </div>
-        <hr>
     </body>
 
 </html>

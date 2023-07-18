@@ -20,18 +20,18 @@
                 The dataset used for this project can be found at <a href="https://catalog.data.gov/dataset/electric-vehicle-population-data" target="_blank">catalog.data.gov/dataset/electric-vehicle-population-data</a>. There are over 150,000 total vehicles in this dataset. Some of the interesting columns include: Model Year, Make, Model and Electric Vehicle Type.  
             </p>
             <p>
-                The screenshot below shows the query I used to effectively calculate the market share of the two electric vehicle types in the dataset.
+                The screenshot below shows the query I used to calculate the market share of the two electric vehicle types in the dataset.
                 <br>In Washington State, the Battery Electric Vehicle (BEV), which are the fully electric vehicles, have a much bigger share of the market at 77.89%.
             </p>
             <img src="images/bev_phev_marketshare_1.png" alt="market share of both vehicle types" width="1400">
             <br><br><br>
             <p>
-                Next I wanted to look at the marketshare for the Make of each vehicle, to see how much of it was taken by Tesla alone. When executing the below query, the output reveals that Tesla does take up a large 59.91% of the total electric vehicle market in Washington State shown below. 
+                Next I looked into the marketshare for the Make of each vehicle, to see how much of it was taken by Tesla alone. When executing the below query, the output revealed that Tesla does take up a large 59.91% of the total electric vehicle market in Washington State shown below. 
             </p>
             <img src="images/tesla_marketshare_2.png" alt="marketshare of Tesla" width="1400">
             <br><br><br>
             <p>
-                The next query I designed, shown below, extracts information from just the Battery Electric Vehicle (BEV) type. It shows the amount of vehichles each model has from that vehicle type. It also shows the vehicle's battery range.
+                The next query I designed, shown below, extracted information from just the Battery Electric Vehicle (BEV) type. It showed the amount of vehichles each model has from that vehicle type. It also shows the vehicle's battery range.
             </p>
             <img src="images/full_electric_share_3.png" alt="bev share" width="1400">
             <br><br><br>
@@ -46,10 +46,10 @@
                 Finally, I designed to a query to look at the model year. It  calculated the total number, and percentage of vehicles for the last ten years.
             </p>
             <img src="images/model_year_5.png" alt="model years" width="1400">
-            </section>
-
-         <hr>
-            <br><br><br><br>
+        </section>
+        <br>
+        <hr>
+        <br>
         <section id="Purchase_card_program_project">
             <h2>Project 2 - Oklahoma Purchase Card Program Analysis</h2>
             <p>
@@ -60,15 +60,15 @@
                 This  dataset contains information on purchases made through the purchase card programs administered by the state of Oklahoma and higher education institutions for the 2022 fiscal year.
             </p>
             <p>
-                The screenshot below shows most of the important columns. 
+                The screenshot below shows most of the columns. 
             </p>
             <img src="images/okpcard_all_data_sql.png" alt="okpcard_all_data" width="1400">
             <br><br><br>
             <p>
-                The below query utilizes the GROUP BY clause and the SUM(AMOUNT) function to identify the top 20 agencies with the highest total purchase amounts.  
+                The below query utilized the GROUP BY clause and the SUM(AMOUNT) function to identify the top 20 agencies with the highest total purchase amounts.  
             </p>
             <p>
-                Additionally, it calculates the percentage of each agency's expenditure in relation to the overall spending. This calculation is performed by dividing an agency's sum of purchase amounts by the total purchase amount of all agencies, which is obtained through a subquery using the SELECT SUM(AMOUNT) function and the FROM statement.
+                Additionally, it calculated the percentage of each agency's expenditure in relation to the overall spending. This calculation is performed by dividing an agency's sum of purchase amounts by the total purchase amount of all agencies, which is obtained through a subquery using the SELECT SUM(AMOUNT) function and the FROM statement.
             </p>
             <img src="images/agencies_with_highest_amounts.png" alt="agencies_with_highest_amounts" width="1400">
             <br><br><br>
@@ -76,29 +76,29 @@
                 With this query shown below, I looked at transaction counts of MCC (Merchandise Category Code) descriptions, to find the most common merchandise categories and their corresponding transaction volumes.
             </p>
             <p>
-                This query groups the data by MCC_DESCRIPTION and calculates the count of transactions within each category using the COUNT(*) function. By leveraging the GROUP BY clause, I ensured that the results were aggregated by MCC_DESCRIPTION.
+                This query grouped the data by MCC_DESCRIPTION and calculated the count of transactions within each category using the COUNT(*) function. By leveraging the GROUP BY clause, I ensured that the results were aggregated by MCC_DESCRIPTION.
             </p>
             <img src="images/merch_desc_count.png" alt="merch_desc_count" width="1400">
             <br><br><br>
             <p>
-                In this next and final query, I look more in detail into expenditure trends and patterns.
+                In this next and final query, I looked more in detail into expenditure trends and patterns.
             </p>
             
             <img src="images/agency_expenditure.png" alt="agency_expenditure" width="1400">
             <p>
-                I use the COUNT(*) and SUM(AMOUNT) functions again as well as the MAX(AMOUNT) function which finds the maximum amount spent in a single transaction by each agency. This shows the highest individual expenditure for each agency. 
+                I used the COUNT(*) and SUM(AMOUNT) functions again as well as the MAX(AMOUNT) function which finds the maximum amount spent in a single transaction by each agency. This shows the highest individual expenditure for each agency. 
             </p>
             <p>
-                The MIN(AMOUNT) function retrieves the minimum amount spent in a single transaction by each agency. This reveals lowest individual expenditure for each agency. 
+                The MIN(AMOUNT) function retrieved the minimum amount spent in a single transaction by each agency. This reveals lowest individual expenditure for each agency. 
             </p>
             <p>
-                The AVG(AMOUNT) function calculates the average amount spent per transaction by each agency. This helps gives an understanding of the typical expenditure level for each agency.
+                The AVG(AMOUNT) function calculated the average amount spent per transaction by each agency. This helps gives an understanding of the typical expenditure level for each agency.
             </p>
             <p>
-                Creating the code for this query demonstrates my ability to extract meaningful insights from financial datasets, analyze transaction data, and provide potentially actionable information for informed decision-making in financial analysis and resource allocation.
+                By Creating the code for this query I hope to demonstrate my ability to extract meaningful insights from financial datasets, analyze transaction data, and provide potentially actionable information for informed decision-making in financial analysis and resource allocation.
             </p>
         </section>
-        <hr>
+        <br>
         <hr> 
         <div class="bottom-links">
             <a href="index.html">Portfolio Main Page</a>
