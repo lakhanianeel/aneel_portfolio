@@ -11,10 +11,65 @@
 
     <body>
         <h1 id="top">Python Projects Page</h1>
+
+    <section id="movies_data_analysis">
+        <hr><hr>
+        <h2>Project 1 - Movies Data Analysis</h2>
+        <p>
+             In this project, I utilize python and pandas to analyze a dataset containing movies and information related to the movies. The dataset was sourced from Kaggle, a popular platform for accessing and sharing datasets. 
+        </p>
+        <p>
+            As shown below, I used the Pandas library and loaded the dataset into a DataFrame. I utilized the 'read_csv' function from Pandas, passing the file path 'movies.csv' as an argument. This function reads the file and creates the DataFrame object, which stores the dataset's contents. 
+        </p>
+        <p>
+            This dataset contains information about movies, including columns such as title, stars rating, run time, release date, genre, director, and cast as shown below along with 50 example rows.  
+        </p>
+        <img src="images/movies_head.png" alt="image" width="1600">
+        <br><br><br>
+        <p>
+            By leveraging Pandas, I was able to carry out various types of data analysis. 
+        </p>
+        <p>
+            One of the analysis include utilizing the 'describe' function to gather basic statistical information about numerical columns in the dataset as seen in the screenshot below. 
+        </p>
+        <img src="images/movies_describe_function.png" alt="image" width="1500">
+        <p>
+            As seen above, by using the the 'describe' function, I can gather useful information, such as the average star rating is 2.7 and the highest is 4 stars. The average runtime of the movies is an hour and 51 minutes, with the longest being about 10 hours long. Also, the release date of the movies range from 1970 to 2023, however most of the movies in this dataset are from 2000 to 2018. 
+        </p>
+        <br><br>
+        <p>
+            below shows a function I created called 'filter_star_rating', which filters the data showing only movies with 4 stars then sorts it by release date as seen in the screenshot below. 
+        </p>
+        <img src="images/movies_filter_rating.png" alt="image" width="1500">
+        <br><br>
+        <p>
+            The below screenshot shows the bar chart I created using the plotly.express module. It gives a visual representation of the  most popular genres.   
+        </p>
+        <p>
+            The code I wrote takes into account multiple genres being tied to single movies, and splits them into individual genres. It also counts the occurrence of each genre, and creates a horizontal bar chart to visualize the genre distribution.
+        </p>
+        <img src="images/images:movie_genre_bar_chart2.png" alt="Bar Chart Image" width="1600">
+        <br><br>
+        <p>
+            The next screenshot shows how I used the same plotly module to create a pie chart showing the top 10 most popular genres. 
+        </p>
+        <p>
+            I used the 'value_counts' function to obtain the count of each genre in the dataset. I then selected the top ten most popular genres based on their count. With the filtered data, I used 'px.pie' to create the pie chart. 
+        </p>
+        <img src="images/movies_genre_piechart.png" alt="Pie Chart Image" width="1500">
+        <br><br><br>
+        <p>
+            The screenshot below shows the visualize_top_directors function I created to utilize, along with plotly, to visualize the top 10 directors with the most 4-star movies.
+        </p>
+        <p>
+            I filtered the DataFrame to include only the 4-star movies and employed data aggregation techniques to count the number of 4-star movies directed by each filmmaker.
+        </p>
+        <img src="images/movies_topdirectors.png" alt="Top Directors Image" width="1500">
+
     
     <section id="qb_data_system">
-        <hr><hr>
-        <h2>Project 1 - QB Data System</h2>
+        <hr>
+        <h2>Project 2 - QB Data System</h2>
         <p>
             I designed this python program to analyze and compare five NFL quarterbacks stats from the 2022 season. The data used comes from <a href="https://www.nfl.com/stats/player-stats/" target="_blank">nfl.com/stats/player-stats/</a>. 
             <br><br>
@@ -57,7 +112,7 @@
         <br><br><br>
     <section id="guessing_game">
         <hr><hr>
-        <h2>Project 2 - Guessing Game</h2>
+        <h2>Project 3 - Guessing Game</h2>
         <p>
             This Python program is a game I designed. Below are screenshots of the code and also of the program being played out.
         </p>    
