@@ -14,14 +14,14 @@
         <section id="electric_vehicle_project">
             <h2>Project 1 - Washington State Electric Vehicle Analysis </h2>  
             <p>
-                In this SQL project, I leveraged the Washington State Department of Licensing's dataset on Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) to analyze and derive valuable insights. Using MySQL Workbench, I performed AD-HOC analysis to showcase key marketshare information within the dataset.  
+                In this SQL project, I leveraged the Washington State Department of Licensing's dataset on Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) to analyze and derive valuable insights by using MySQL.  
             </p>
             <p>
                 The dataset used for this project can be found at <a href="https://catalog.data.gov/dataset/electric-vehicle-population-data" target="_blank">catalog.data.gov/dataset/electric-vehicle-population-data</a>. There are over 150,000 total vehicles in this dataset. Some of the interesting columns include: Model Year, Make, Model and Electric Vehicle Type.  
             </p>
             <p>
                 The screenshot below shows the query I used to calculate the market share of the two electric vehicle types in the dataset.
-                <br>In Washington State, the Battery Electric Vehicle (BEV), which are the fully electric vehicles, have a much bigger share of the market at 77.89%.
+                <br>In Washington State, the Battery Electric Vehicle (BEV), have a much bigger share of the market at 77.89%.
             </p>
             <img src="images/bev_phev_marketshare_1.png" alt="market share of both vehicle types" width="1400">
             <br><br><br>
@@ -31,17 +31,10 @@
             <img src="images/tesla_marketshare_2.png" alt="marketshare of Tesla" width="1400">
             <br><br><br>
             <p>
-                The next query I designed, shown below, extracted information from just the Battery Electric Vehicle (BEV) type. It showed the amount of vehichles each model has from that vehicle type. It also shows the vehicle's battery range.
-            </p>
-            <img src="images/full_electric_share_3.png" alt="bev share" width="1400">
-            <br><br><br>
-            
-            <p>
                 The next query presents data from just the Plug-in Hyprib Electric Vehicles (PHEVs), to see which are most popular models from that type. 
             </p>
             <img src="images/phev_share_4.png" alt="phev marketshare" width="1400">
             <br><br><br>
-
             <p>
                 Finally, I designed to a query to look at the model year. It  calculated the total number, and percentage of vehicles for the last ten years.
             </p>
@@ -54,29 +47,21 @@
             <h2>Project 2 - Oklahoma Purchase Card Program Analysis</h2>
             <p>
                 In this project, I conducted another analysis utalizing mysql.
-                <br>The dataset used in this project can be found at <a href="https://catalog.data.gov/dataset/purchase-card-pcard-fiscal-year-2022-31015" target="_blank">catalog.data.gov/dataset/purchase-card-pcard-fiscal-year-2022-31015</a>. It contains over 25,000 transactions. 
+                <br>The dataset used in the project can be found at <a href="https://catalog.data.gov/dataset/purchase-card-pcard-fiscal-year-2022-31015" target="_blank">catalog.data.gov/dataset/purchase-card-pcard-fiscal-year-2022-31015</a>. It contains over 25,000 transactions. 
             </p>
             <p>
                 This  dataset contains information on purchases made through the purchase card programs administered by the state of Oklahoma and higher education institutions for the 2022 fiscal year.
             </p>
             <p>
-                The screenshot below shows most of the columns. 
-            </p>
-            <img src="images/okpcard_all_data_sql.png" alt="okpcard_all_data" width="1400">
-            <br><br><br>
-            <p>
-                The below query utilized the GROUP BY clause and the SUM(AMOUNT) function to identify the top 20 agencies with the highest total purchase amounts.  
+                The screenshot below shows the query I created which identifies the top 20 agencies with the highest total purchase amounts.  
             </p>
             <p>
-                Additionally, it calculated the percentage of each agency's expenditure in relation to the overall spending. This calculation is performed by dividing an agency's sum of purchase amounts by the total purchase amount of all agencies, which is obtained through a subquery using the SELECT SUM(AMOUNT) function and the FROM statement.
+                Additionally, it calculates the percentage of each agency's expenditure in relation to the overall spending.
             </p>
             <img src="images/agencies_with_highest_amounts.png" alt="agencies_with_highest_amounts" width="1400">
             <br><br><br>
             <p>
-                With this query shown below, I looked at transaction counts of MCC (Merchandise Category Code) descriptions, to find the most common merchandise categories and their corresponding transaction volumes.
-            </p>
-            <p>
-                This query grouped the data by MCC_DESCRIPTION and calculated the count of transactions within each category using the COUNT(*) function. By leveraging the GROUP BY clause, I ensured that the results were aggregated by MCC_DESCRIPTION.
+                The below query looks at transaction counts of MCC (Merchandise Category Code) descriptions, to find the most common merchandise categories and their corresponding transaction volumes.
             </p>
             <img src="images/merch_desc_count.png" alt="merch_desc_count" width="1400">
             <br><br><br>
@@ -95,7 +80,7 @@
                 The AVG(AMOUNT) function calculated the average amount spent per transaction by each agency. This helps gives an understanding of the typical expenditure level for each agency.
             </p>
             <p>
-                By Creating the code for this query I hope to demonstrate my ability to extract meaningful insights from financial datasets, analyze transaction data, and provide potentially actionable information for informed decision-making in financial analysis and resource allocation.
+                By Creating the code for these quires, I hope to demonstrate my ability to extract meaningful insights from financial datasets, analyze transaction data, and provide potentially actionable information.
             </p>
         </section>
         <br>
